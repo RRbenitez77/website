@@ -1,0 +1,290 @@
+
+/* Add CSS styles for your website here and use them in index.html. */
+@font-face {
+  font-family: 'monts';
+  src: url('Montserrat-ExtraLightItalic.otf'); /* Fixed URL with proper syntax */
+}
+
+body {
+  /* Background color and font styles */
+  background-color: #b4a4f5;
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply custom font to headings */
+h1, h3 {
+  font-family: 'monts', sans-serif;
+}
+
+header {
+  /* Add margin around the header */
+  margin: 10px; /* Added unit for margin */
+  
+  /* Add padding inside the header */
+  padding: 0; /* Removed padding to avoid space around the header */
+  
+  /* Add a solid border around the header (optional) */
+  border: 2px solid rgb(232, 11, 11);
+  
+  /* Flexbox for aligning content within the header */
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Align items vertically centered */
+}
+
+/* Proper class reference */
+.flex-container {
+  display: flex;
+  align-items: center; /* Vertically aligns Help text and navbar */
+  justify-content: space-between;
+}
+
+.navbar {
+  display: flex;
+  gap: 15px; /* Space between buttons */
+  list-style: none; /* Removes bullets */
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  flex: none; /* Removed invalid value */
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+ul li {
+  list-style: none;
+  font-size: x-large;
+  margin-right: 20px; /* Add space between the buttons */
+}
+
+.headimages {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.lists {
+  list-style: none;
+}
+
+.green {
+  color: rgb(90, 26, 159);
+}
+
+#aboutWeek {
+  font-style: italic;
+}
+
+.my-flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.button {
+  display: inline-block;
+  background-color: #da1a1a; /* Red background */
+  color: white; /* White text */
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners */
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.headimages {
+  display: flex;
+  justify-content: center; /* Center images horizontally */
+  align-items: center; /* Center images vertically */
+  width: 100%; /* Ensure the container spans the full width */
+}
+
+.header-button {
+  font-size: 18px;
+  padding: 12px 24px;
+  width: 150px;
+}
+
+/* Correct background color for body */
+body {
+  background-color: white;
+  color: black;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* Light text */
+}
+
+/* Optional: Dark mode styling for specific elements */
+.dark-mode .header-button {
+  background-color: #333;
+  color: #fff;
+}
+
+.petition-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%; /* Corrected width */
+  padding-bottom: 50px;
+}
+
+.petition-para {
+  width: 55%;
+  padding-right: 10px;
+}
+
+.signatures {
+  width: 45%;
+  padding-right: 10px;
+}
+/* Ensure the content-row uses Flexbox to align items horizontally */
+#impact-section .content-row {
+  display: flex;
+  justify-content: space-between; /* Distribute space evenly between items */
+  gap: 20px; /* Add space between the content blocks */
+  flex-wrap: wrap; /* Allow items to wrap onto the next line on smaller screens */
+}
+
+/* Style for each content-block */
+.content-block {
+  flex: 1 1 30%; /* Allow each content block to take up 30% of the container */
+  max-width: 350px; /* Set a max-width to prevent stretching */
+  box-sizing: border-box; /* Include padding and border in the element's total width */
+  display: flex;
+  flex-direction: column; /* Align the video and buttons vertically */
+}
+
+/* Optional: Ensure iframes are responsive */
+.content-block iframe {
+  width: 100%; /* Make iframe take up the full width of its container */
+  height: auto; /* Automatically adjust height while maintaining aspect ratio */
+}
+
+/* Optional: Adjust the container if needed */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 20px;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  gap: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  padding: 8px;
+  font-size: 14px;
+}
+
+input[type="submit"] {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+/* Error styling for invalid form inputs */
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background: pink;
+}
+
+.modal-content {
+  background-color: lightsteelblue;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+#thanks-modal-content {
+  margin: 1rem 0;
+}
+
+.close-button {
+  background-color: #f44336; /* Red color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.close-button:hover {
+  background-color: #d32f2f; /* Darker red on hover */
+}
+/* Modal container styling */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+
+/* Modal image styling */
+#modal-image {
+  max-width: 40%; /* Scale image to fit within the modal */
+  max-height: 40%; /* Prevent image from overflowing modal */
+  transition: transform 0.5s ease; /* Smooth animation for scaling */
+}
+.revealable {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.revealable.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+

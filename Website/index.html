@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="reset.css" rel="stylesheet" type="text/css" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link href="reset-webview.css" rel="stylesheet" type="text/css" />
+    <title>JavaScript Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #hooverElement {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(23, 189, 126);
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .header-button {
+            margin: 5px;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .row {
+            margin-top: 10px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .petition-container,
+        .container {
+            margin: 20px;
+        }
+
+        iframe {
+            margin: 10px 0;
+        }
+
+        img {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Revealable Buttons Section -->
+    <div class="revealable">
+        <div class="flex-container">
+            <!-- Header and Navigation -->
+            <div id="hooverElement">Help</div>
+            <ul class="navbar">
+                <li>
+                    <a href="https://www.thecboa.org/therapist-directory/" target="_blank">
+                        <button class="header-button" type="button">Therapist</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://podcasts.feedspot.com/confidence_and_self_esteem_podcasts/" target="_blank">
+                        <button class="header-button" type="button">Podcast</button>
+                    </a>
+                </li>
+                <li>
+                    <button class="header-button" type="button">YouTube</button>
+                </li>
+                <li>
+                    <a href="https://seanhamptoncole.wordpress.com/2013/11/06/advice-to-young-men/" target="_blank">
+                        <button class="header-button" type="button">Blogs</button>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Dark Mode and Motion Control Buttons -->
+            <button id="toggle-dark-mode">Toggle Dark Mode</button>
+            <button id="reduce-motion">Reduce Motion</button>
+        </div>
+    </div>
+</body>
+
+
+
+
+    <!-- Header Section -->
+    <div class="header">
+        <div id="header-left">
+            <img id="header-img" src="./img/youngman.jpeg" width="200" height="200" />
+        </div>
+        <div id="header-right">
+            <h1>Activism Project: Young Men's Challenges and Opportunities</h1>
+            <h3>Shaping Young Men's Minds for the Future</h3>
+            <a href="https://www.nimh.nih.gov/health/topics/men-and-mental-health" target="_blank">
+                <button style="color: purple" class="header-button" type="button">Resources</button>
+            </a>
+            <a href="https://mindjournals.com/blogs/read/how-to-start-exercising" target="_blank">
+                <button style="color: purple" class="header-button" type="button">Share Your Story in the Blog!</button>
+            </a>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div style="background-color: rgb(13, 170, 222); padding: 10px;">
+        <h2>Curbing Social Media Use</h2>
+        <p>
+            Social media has a reinforcing nature. Using it activates the brain’s reward center by releasing dopamine, a
+            “feel-good chemical” linked to pleasurable activities such as sex, food, and social interaction.
+        </p>
+    </div>
+
+    <!-- Data Section -->
+    <h3>Data on the Topic</h3>
+    <div class="flex-container">
+        <img src="./img/pewresearch.webp" width="180" height="180" />
+        <img src="./img/socialmediause.webp" width="185" height="185" />
+    </div>
+    <h4>The graphs above display key trends illustrating the technology landscape and types of social media use by platforms.</h4>
+
+
+
+    <!-- Impact Section -->
+    <section id="impact-section">
+        <h2>Impact!</h2>
+        <div class="content-row">
+            <!-- First Post -->
+            <div class="content-block">
+                <iframe width="350" height="200" src="https://www.youtube.com/embed/RwY40BqLguA?si=fzqzd48VOD7sBON" title="YouTube video player" frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="container">
+                    <div class="row">
+                        
+                        <button class="like-btn">❤️</button>
+                        <button class="comment-btn">💬</button>
+                        <button class="share-btn">💌</button>
+                        <button class="like-count">0</button>
+                    </div>
+                    <div class="row">
+                        <p><strong>@useryou</strong> Professor Galloway - Why are young men in decline?</p>
+                    </div>
+                </div>
+            </div>
+    
+
+
+
+            <!-- Second Post -->
+            <div class="content-block">
+                <iframe width="350" height="200" src="https://www.youtube.com/embed/16QlwqB7crc?si=_y8hpU7UKzGVNqtl" title="YouTube video player" frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="container">
+                    <div class="row">
+                        
+                        <button class="like-btn">❤️</button>
+                        <button class="comment-btn">💬</button>
+                        <button class="share-btn">💌</button>
+                        <button class="like-count">0</button>
+                    </div>
+                    <div class="row">
+                        <p><strong>@useryou</strong> 48 Laws of Power: Advice to young men by Robert Greene</p>
+                    </div>
+                </div>
+            </div>
+    
+
+
+            
+            <!-- Third Post -->
+            <div class="content-block">
+                <iframe width="350" height="200" src="https://www.youtube.com/embed/Zjm36k2GoW0?si=uxkXXa8hdXPgMlwU" title="YouTube video player" frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="container">
+                    <div class="row">
+                       
+                        <button class="like-btn">❤️</button>
+                        <button class="comment-btn">💬</button>
+                        <button class="share-btn">💌</button>
+                        <button class="like-count">0</button>
+                    </div>
+                    <div class="row">
+                        <p><strong>@useryou</strong> Jordan Peterson - Message to Young Men</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Form Validation</title>
+      <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      <!-- Petition Section Update -->
+      <h2>Sign Our Petition 📢</h2>
+      <div class="petition-container">
+        <div class="petition-para">
+          <p>Your voice matters! Help us make a change by signing this petition.</p>
+        </div>
+      </div>
+    
+      <h2>Form Validation</h2>
+      <!-- Sign Petition Form -->
+      <form id="myForm">
+        <label for="nameInput">Name:</label>
+        <input type="text" id="nameInput" name="nameInput" required>
+    
+        <label for="hometownInput">Hometown:</label>
+        <input type="text" id="hometownInput" name="hometownInput" required>
+    
+        <label for="emailInput">Email:</label>
+        <input type="email" id="emailInput" name="emailInput" required>
+    
+        <button id="sign-now-button" type="submit">Sign Now</button>
+      </form>
+    
+      <div id="signatures">
+        <h3>Signatures:</h3>
+        <!-- Modal -->
+        <div id="thanks-modal" class="modal">
+          <div class="modal-content">
+            <div id="modal-text-container">
+              <p id="thanks-modal-content">Thank you for your submission!</p>
+              <button id="close-modal-button">Close</button>
+            </div>
+            <img id="modal-image" src="celebration.jpg" alt="Let's get to Work">
+          </div>
+        </div>
+        <!-- Signatures -->
+        <div class="signatures">
+          <p>🖊️ Thomas from Buckhead supports this.</p>
+          <p>🖊️ Leslie from Atlanta supports this.</p>
+          <p>🖊️ Paul from Roswell supports this.</p>
+        </div>
+      </div>
+      
+      <script src="script.js" defer></script>
+      <script src="index.js" defer></script>
+    </body>
+    </html>
+    
+
+      
+     
+  
